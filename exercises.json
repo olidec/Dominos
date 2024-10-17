@@ -1,0 +1,94 @@
+[
+  {
+    "exercise": "$\\dfrac{a^2-1}{a-1}$",
+    "solution": "$a+1$"
+  },
+  {
+    "exercise": "$\\dfrac{a^2-1}{a+1}$",
+    "solution": "$a-1$"
+  },
+  {
+    "exercise": "$\\dfrac{42xyz}{56}$",
+    "solution": "$\\dfrac{6xyz}{7}$"
+  },
+  {
+    "exercise": "$\\dfrac{33a^2b^2}{44a^3b}$",
+    "solution": "$\\dfrac{3b}{4a}$"
+  },
+  {
+    "exercise": "$\\dfrac{3x^2+5x}{x}$",
+    "solution": "$3x+5$"
+  },
+  {
+    "exercise": "$\\dfrac{6c^9-12c^3}{3c^2}$",
+    "solution": "$2c^7-4c$"
+  },
+  {
+    "exercise": "$\\dfrac{2x^2-4x}{2x}$",
+    "solution": "$x-2$"
+  },
+  {
+    "exercise": "$\\dfrac{(x+2)\\cdot(x-4)^2}{(x-4)}$",
+    "solution": "$(x+2)(x-4)$"
+  },
+  {
+    "exercise": "$\\dfrac{x^2+5x+4}{x^2+4x+3}$",
+    "solution": "$\\dfrac{x+4}{x+3}$"
+  },
+  {
+    "exercise": "$\\dfrac{2x^2+x-3}{x^2-1}$",
+    "solution": "$\\dfrac{2x+3}{x+1}$"
+  },
+  {
+    "exercise": "$\\dfrac{x^2+6x+9}{x^2-2x-15}$",
+    "solution": "$\\dfrac{x+3}{x-5}$"
+  },
+  {
+    "exercise": "$\\dfrac{x^2-2x}{x^2+2x-8}$",
+    "solution": "$\\dfrac{x}{x+4}$"
+  },
+  {
+    "exercise": "$\\dfrac{x^2-7x+10}{x^2+3x-10}$",
+    "solution": "$\\dfrac{x-5}{x+5}$"
+  },
+  {
+    "exercise": "$\\dfrac{x^2+10x+24}{x^2-36}$",
+    "solution": "$\\dfrac{x+4}{x-6}$"
+  },
+  {
+    "exercise": "$\\dfrac{x^2-x-6}{x^2-2x-3}$",
+    "solution": "$\\dfrac{x+2}{x+1}$"
+  },
+  {
+    "exercise": "$\\dfrac{12x^3+36x^2-48x}{4x^3-64x}$",
+    "solution": "$\\dfrac{3x-3}{x-4}$"
+  },
+  {
+    "exercise": "$\\dfrac{x^2-2xy}{x}$",
+    "solution": "$x-2y$"
+  },
+  {
+    "exercise": "$\\dfrac{x^6-7x^5+4x^8}{x^2}$",
+    "solution": "$4x^6-7x^3+x^4$"
+  },
+  {
+    "exercise": "$\\dfrac{x+1}{x^2+3x+2}$",
+    "solution": "$\\dfrac{1}{x+2}$"
+  },
+  {
+    "exercise": "$\\dfrac{a^2-11a+30}{a-5}$",
+    "solution": "$a-6$"
+  },
+  {
+    "exercise": "$\\dfrac{x^2y+y^2x}{x^2y^2}$",
+    "solution": "$\\dfrac{x+y}{xy}$"
+  },
+  {
+    "exercise": "$\\dfrac{x+2y}{x^2+3xy+2y^2}$",
+    "solution": "$\\dfrac{1}{x+y}$"
+  },
+  {
+    "exercise": "$\\dfrac{a^2-2a-3}{a^2-4a+3}$",
+    "solution": "$\\dfrac{a+1}{a-1}$"
+  }
+]

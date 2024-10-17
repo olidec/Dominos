@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{math}
+\usepackage[margin=1cm]{geometry}
+
+\setlength{\parindent}{0cm}
+\setlength{\lineskip}{10pt}
+
+\newcommand{\hdomi}[2]{
+    \begin{tikzpicture}
+        \tikzmath{
+            \dwidth = 8;
+            \dheight = 3.5;
+        }
+    \draw[thick] (0,0) rectangle (\dwidth,\dheight);
+    \draw (\dwidth/2,0) -- (\dwidth/2,\dheight);
+    \node at (\dwidth/4,\dheight/2) {#1};
+    \node at (3*\dwidth/4,\dheight/2) {#2};
+    \end{tikzpicture}
+}
+
+\newcommand{\vdomi}[2]{
+    \begin{tikzpicture}
+        \tikzmath{
+            \dwidth = 8;
+            \dheight = 3.5;
+        }
+    \draw[thick] (0,0) rectangle (\dwidth,\dheight);
+    \draw (0,\dheight/2) -- (\dwidth,\dheight/2);
+    \node at (\dwidth/2,3*\dheight/4) {\Large #1};
+    \node at (\dwidth/2,\dheight/4) {\Large #2};
+    \end{tikzpicture}
+}
+\pagestyle{empty}
+\begin{document}
+\begin{center}
+    \input{content.tex}
+\end{center}
+
+\end{document}

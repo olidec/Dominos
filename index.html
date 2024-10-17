@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaTeX Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Generate Math Domino Exercises in LaTeX</h1>
+    <p id="explain">
+      This generates a set of "dominos" that can be used to practice patterns in
+      math class. Each domino contains an exercise on the bottom (right) and the
+      solution to another exercise on the top (left). The goal is to place the
+      dominos in a row such that the solutions match the problems. The sequence
+      starts with the domino labeled "START" on the top and ends with the domino
+      labeled "END" on the bottom. If the number of exercises is odd, an empty
+      domino will be added at the end. This helps with the printing layout.
+    </p>
+
+    <ol>
+      <li>Upload JSON File</li>
+      <!-- File Input -->
+      <input type="file" id="fileInput" accept=".json" /><br /><br />
+
+      Note: Your JSON file must have the following format:
+      <pre>
+[
+  {"exercise": "Exercise 1", "solution": "Solution 1"},
+  {"exercise": "Exercise 2", "solution": "Solution 2"}
+]
+    </pre
+      >
+
+      <!-- Checkbox for Randomization -->
+      <li>Check this box to randomize the order of the pairs.</li>
+      <label>
+        <input type="checkbox" id="randomizeCheckbox" /> Randomize Pairs </label
+      ><br /><br />
+
+      <!-- Radio Buttons for Format Selection -->
+      <li>
+        Select the format for the dominos (horizontal type or vertical type).
+      </li>
+      <label>
+        <input type="radio" name="format" value="horizontal" checked />
+        Horizontal Format </label
+      ><br />
+      <label>
+        <input type="radio" name="format" value="vertical" /> Vertical Format </label
+      ><br /><br />
+    </ol>
+
+    <!-- Button to trigger the generation -->
+    <button onclick="processFile()">Generate LaTeX</button><br /><br />
+
+    <!-- Placeholder for showing the generated LaTeX -->
+    <textarea
+      id="latexOutput"
+      rows="20"
+      cols="80"
+      placeholder="Generated LaTeX will appear here..."
+    ></textarea
+    ><br /><br />
+
+    <!-- Download Button -->
+    <button onclick="downloadLatex()">Download LaTeX File</button>
+
+    <script>
+      // Function to process the uploaded file
+      function processFile() {
+        const fileInput = document.getElementById("fileInput");
+        const randomize = document.getElementById("randomizeCheckbox").checked;
+        const format = document.querySelector(
+          'input[name="format"]:checked'
+        ).value;
+
+        if (fileInput.files.length === 0) {
+          alert("Please upload a JSON file!");
+          return;
+        }
+
+        const file = fileInput.files[0];
+        const reader = new FileReader();
+
+        reader.onload = function (event) {
+          const data = JSON.parse(event.target.result);
+          const pairs = data.map((item) => [item.exercise, item.solution]);
+
+          // Shuffle pairs if randomize is true
+          if (randomize) {
+            shuffleArray(pairs);
+          }
+
+          // Determine LaTeX command based on format selection
+          const domiCommand = format === "horizontal" ? "\\hdomi" : "\\vdomi";
+
+          // Generate LaTeX content
+          let latexContent = `\\documentclass{article}
+\\usepackage{amsmath,amssymb}
+\\usepackage{tikz}
+\\usetikzlibrary{math}
+\\usepackage[margin=1cm]{geometry}
+
+\\setlength{\\parindent}{0cm}
+\\setlength{\\lineskip}{10pt}
+
+    \\newcommand{\\hdomi}[2]{
+        \\begin{tikzpicture}
+            \\tikzmath{
+                \\dwidth = 8;
+                \\dheight = 3.5;
+            }
+        \\draw[thick] (0,0) rectangle (\\dwidth,\\dheight);
+        \\draw (\\dwidth/2,0) -- (\\dwidth/2,\\dheight);
+        \\node at (\\dwidth/4,\\dheight/2) {#1};
+        \\node at (3*\\dwidth/4,\\dheight/2) {#2};
+        \\end{tikzpicture}
+    } 
+
+    \\newcommand{\\vdomi}[2]{
+        \\begin{tikzpicture}
+            \\tikzmath{
+                \\dwidth = 8;
+                \\dheight = 3.5;
+            }
+        \\draw[thick] (0,0) rectangle (\\dwidth,\\dheight);
+        \\draw (0,\\dheight/2) -- (\\dwidth,\\dheight/2);
+        \\node at (\\dwidth/2,3*\\dheight/4) {\\Large #1};
+        \\node at (\\dwidth/2,\\dheight/4) {\\Large #2};
+        \\end{tikzpicture}
+    }
+\\pagestyle{empty}
+\\begin{document}
+\\begin{center}`;
+          latexContent += domiCommand + "{START}{" + pairs[0][0] + "}\n";
+          for (let i = 1; i < pairs.length; i++) {
+            latexContent +=
+              domiCommand + "{" + pairs[i - 1][1] + "}{" + pairs[i][0] + "}\n";
+          }
+          latexContent +=
+            domiCommand + "{" + pairs[pairs.length - 1][1] + "}{END}\n";
+
+          if (pairs.length % 2 === 0) {
+            latexContent += domiCommand + "{}{}\n";
+          }
+
+          latexContent += `
+\\end{center}
+\\end{document}`;
+
+          // Display the generated LaTeX content in the textarea
+          document.getElementById("latexOutput").value = latexContent;
+        };
+
+        reader.readAsText(file);
+      }
+
+      // Helper function to shuffle an array (Fisher-Yates algorithm)
+      function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+      }
+
+      // Function to download the generated LaTeX content as a .tex file
+      function downloadLatex() {
+        const latexContent = document.getElementById("latexOutput").value;
+        if (latexContent === "") {
+          alert("No LaTeX content to download!");
+          return;
+        }
+
+        const blob = new Blob([latexContent], { type: "text/plain" });
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = "content.tex";
+        link.click();
+      }
+    </script>
+  </body>
+</html>

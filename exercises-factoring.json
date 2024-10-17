@@ -1,0 +1,14 @@
+[
+  {
+    "exercise": "$x^2-3x-4$",
+    "solution": "$(x-4)(x+1)$"
+  },
+  {
+    "exercise": "$x^2-5x+6$",
+    "solution": "$(x-2)(x-3)$"
+  },
+  {
+    "exercise": "$x^2-7x+12$",
+    "solution": "$(x-3)(x-4)$"
+  }
+]
