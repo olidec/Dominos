@@ -98,9 +98,11 @@
           // Generate LaTeX content
           let latexContent = `\\documentclass{article}
 \\usepackage{amsmath,amssymb}
-\\usepackage{tikz}
-\\usetikzlibrary{math}
-\\usepackage[margin=1cm]{geometry}
+\\RequirePackage{tikz}
+\\usetikzlibrary{plotmarks, math}
+\\usepackage{pgfplots}
+\\pgfplotsset{compat=1.16}
+\\usepackage[margin=0cm, landscape]{geometry}
 
 \\setlength{\\parindent}{0cm}
 \\setlength{\\lineskip}{10pt}
