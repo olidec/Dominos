@@ -61,7 +61,7 @@
   },
   {
     "exercise": "How many diagonals does a regular octagon have?",
-    "solution": "$\\binom{8}{2} - 8 = 20$"
+    "solution": "$\\binom{8}{2} - 8 = \\frac{8\\cdot 5}{2} = 20$"
   },
   {
     "exercise": "How many ways can you arrange the letters of SUCCESS?",
@@ -77,7 +77,7 @@
   },
   {
     "exercise": "How many positive divisors does $2^3 \\cdot 3^2 \\cdot 5$ have?",
-    "solution": "$(3+1)(2+1)(1+1) = 24$"
+    "solution": "$(3+1)\\cdot (2+1)\\cdot (1+1) = 24$"
   },
   {
     "exercise": "In how many ways can you partition 5 distinct objects into 2 non-empty groups?",
