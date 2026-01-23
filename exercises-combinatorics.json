@@ -37,7 +37,7 @@
   },
   {
     "exercise": "In how many ways can 3 boys and 2 girls be arranged if boys must sit together?",
-    "solution": "$3! \\cdot 2! \\cdot 2 = 24$"
+    "solution": "$3! \\cdot 3! = 36$"
   },
   {
     "exercise": "How many 4-letter words can be formed from the letters of BANANA?",
