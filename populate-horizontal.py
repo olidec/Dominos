@@ -3,7 +3,7 @@ import random
 
 def generate_latex(randomize=False):
     # Step 1: Read the JSON file
-    with open('exercises-polynomials.json', 'r') as file:
+    with open('exercises-combinatorics.json', 'r') as file:
         data = json.load(file)
 
     # Step 2: Extract exercises and solutions into lists

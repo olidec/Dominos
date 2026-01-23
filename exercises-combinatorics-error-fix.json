@@ -1,0 +1,34 @@
+[
+  {
+    "exercise": "How many 4-letter words can be formed from the letters of BANANA?",
+    "solution": "$2\\cdot \\frac{4!}{2!} + 2\\cdot \\frac{4!}{3!} + \\frac{4!}{2!\\cdot 2!} = 38$"
+  },
+  {
+    "exercise": "How many 4-letter words can be formed from the letters of BANANA?",
+    "solution": "$2\\cdot \\frac{4!}{2!} + 2\\cdot \\frac{4!}{3!} + \\frac{4!}{2!\\cdot 2!} = 38$"
+  },
+  {
+    "exercise": "How many 4-letter words can be formed from the letters of BANANA?",
+    "solution": "$2\\cdot \\frac{4!}{2!} + 2\\cdot \\frac{4!}{3!} + \\frac{4!}{2!\\cdot 2!} = 38$"
+  },
+  {
+    "exercise": "How many 4-letter words can be formed from the letters of BANANA?",
+    "solution": "$2\\cdot \\frac{4!}{2!} + 2\\cdot \\frac{4!}{3!} + \\frac{4!}{2!\\cdot 2!} = 38$"
+  },
+  {
+    "exercise": "How many 4-letter words can be formed from the letters of BANANA?",
+    "solution": "$2\\cdot \\frac{4!}{2!} + 2\\cdot \\frac{4!}{3!} + \\frac{4!}{2!\\cdot 2!} = 38$"
+  },
+  {
+    "exercise": "How many 4-letter words can be formed from the letters of BANANA?",
+    "solution": "$2\\cdot \\frac{4!}{2!} + 2\\cdot \\frac{4!}{3!} + \\frac{4!}{2!\\cdot 2!} = 38$"
+  },
+  {
+    "exercise": "How many 4-letter words can be formed from the letters of BANANA?",
+    "solution": "$2\\cdot \\frac{4!}{2!} + 2\\cdot \\frac{4!}{3!} + \\frac{4!}{2!\\cdot 2!} = 38$"
+  },
+  {
+    "exercise": "How many 4-letter words can be formed from the letters of BANANA?",
+    "solution": "$2\\cdot \\frac{4!}{2!} + 2\\cdot \\frac{4!}{3!} + \\frac{4!}{2!\\cdot 2!} = 38$"
+  }
+]

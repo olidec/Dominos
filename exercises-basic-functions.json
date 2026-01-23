@@ -1,0 +1,142 @@
+[
+  {
+    "exercise": "\\plotbox{x}{-5.5}{5.5}{-5.5}{5.5}",
+    "solution": "$y=x$"
+  },
+  {
+    "exercise": "\\plotbox{-x+2}{-5.5}{5.5}{-3.5}{7.5}",
+    "solution": "$y=-x+2$"
+  },
+  {
+    "exercise": "\\plotbox{2*x-1}{-3.5}{3.5}{-7.5}{5.5}",
+    "solution": "$y=2x-1$"
+  },
+  {
+    "exercise": "\\plotbox{x^2}{-4.5}{4.5}{-1.5}{8.5}",
+    "solution": "$y=x^2$"
+  },
+  {
+    "exercise": "\\plotbox{-x^2+4}{-4.5}{4.5}{-5.5}{5.5}",
+    "solution": "$y=-x^2+4$"
+  },
+  {
+    "exercise": "\\plotbox{(x-2)^2}{-2.5}{6.5}{-1.5}{8.5}",
+    "solution": "$y=(x-2)^2$"
+  },
+  {
+    "exercise": "\\plotbox{(x+1)^2-3}{-5.5}{3.5}{-4.5}{5.5}",
+    "solution": "$y=(x+1)^2-3$"
+  },
+  {
+    "exercise": "\\plotbox{x^3}{-3.5}{3.5}{-5.5}{5.5}",
+    "solution": "$y=x^3$"
+  },
+  {
+    "exercise": "\\plotbox{-x^3}{-3.5}{3.5}{-5.5}{5.5}",
+    "solution": "$y=-x^3$"
+  },
+  {
+    "exercise": "\\plotbox{sin(deg(x))}{-7}{7}{-2.5}{2.5}",
+    "solution": "$y=\\sin(x)$"
+  },
+  {
+    "exercise": "\\plotbox{cos(deg(x))}{-7}{7}{-2.5}{2.5}",
+    "solution": "$y=\\cos(x)$"
+  },
+  {
+    "exercise": "\\plotbox{-sin(deg(x))}{-7}{7}{-2.5}{2.5}",
+    "solution": "$y=-\\sin(x)$"
+  },
+  {
+    "exercise": "\\plotbox{2*sin(deg(x))}{-7}{7}{-3.5}{3.5}",
+    "solution": "$y=2\\sin(x)$"
+  },
+  {
+    "exercise": "\\plotbox{sin(deg(2*x))}{-4}{4}{-2.5}{2.5}",
+    "solution": "$y=\\sin(2x)$"
+  },
+  {
+    "exercise": "\\plotbox{cos(deg(x))+1}{-7}{7}{-1.5}{3.5}",
+    "solution": "$y=\\cos(x)+1$"
+  },
+  {
+    "exercise": "\\plotbox{exp(x)}{-3.5}{2.5}{-1.5}{7.5}",
+    "solution": "$y=e^x$"
+  },
+  {
+    "exercise": "\\plotbox{exp(-x)}{-2.5}{3.5}{-1.5}{7.5}",
+    "solution": "$y=e^{-x}$"
+  },
+  {
+    "exercise": "\\plotbox{2^x}{-3.5}{3.5}{-1.5}{8.5}",
+    "solution": "$y=2^x$"
+  },
+  {
+    "exercise": "\\plotbox{-exp(x)}{-2.5}{3.5}{-7.5}{1.5}",
+    "solution": "$y=-e^x$"
+  },
+  {
+    "exercise": "\\plotbox{ln(x)}{0.01}{8.5}{-4.5}{3.5}",
+    "solution": "$y=\\ln(x)$"
+  },
+  {
+    "exercise": "\\plotbox{-ln(x)}{0.01}{8.5}{-3.5}{4.5}",
+    "solution": "$y=-\\ln(x)$"
+  },
+  {
+    "exercise": "\\plotbox{ln(x+2)}{-1.99}{6.5}{-4.5}{3.5}",
+    "solution": "$y=\\ln(x+2)$"
+  },
+  {
+    "exercise": "\\plotbox{sqrt(x)}{-0.5}{9.5}{-1.5}{4.5}",
+    "solution": "$y=\\sqrt{x}$"
+  },
+  {
+    "exercise": "\\plotbox{-sqrt(x)}{-0.5}{9.5}{-4.5}{1.5}",
+    "solution": "$y=-\\sqrt{x}$"
+  },
+  {
+    "exercise": "\\plotbox{sqrt(x-1)}{0.5}{9.5}{-1.5}{4.5}",
+    "solution": "$y=\\sqrt{x-1}$"
+  },
+  {
+    "exercise": "\\plotbox{1/x}{-5.5}{5.5}{-5.5}{5.5}",
+    "solution": "$y=\\frac{1}{x}$"
+  },
+  {
+    "exercise": "\\plotbox{-1/x}{-5.5}{5.5}{-5.5}{5.5}",
+    "solution": "$y=-\\frac{1}{x}$"
+  },
+  {
+    "exercise": "\\plotbox{1/x^2}{-4.5}{4.5}{-1.5}{8.5}",
+    "solution": "$y=\\frac{1}{x^2}$"
+  },
+  {
+    "exercise": "\\plotbox{abs(x)}{-5.5}{5.5}{-1.5}{5.5}",
+    "solution": "$y=|x|$"
+  },
+  {
+    "exercise": "\\plotbox{-abs(x)+3}{-5.5}{5.5}{-2.5}{4.5}",
+    "solution": "$y=-|x|+3$"
+  },
+  {
+    "exercise": "\\plotbox{abs(x-2)}{-3.5}{7.5}{-1.5}{5.5}",
+    "solution": "$y=|x-2|$"
+  },
+  {
+    "exercise": "\\plotbox{x^2-4}{-4.5}{4.5}{-5.5}{5.5}",
+    "solution": "$y=x^2-4$"
+  },
+  {
+    "exercise": "\\plotbox{-2*x^2}{-3.5}{3.5}{-8.5}{1.5}",
+    "solution": "$y=-2x^2$"
+  },
+  {
+    "exercise": "\\plotbox{1/2*x^2}{-5.5}{5.5}{-1.5}{7.5}",
+    "solution": "$y=\\frac{1}{2}x^2$"
+  },
+  {
+    "exercise": "\\plotbox{tan(deg(x))}{-1.4}{1.4}{-5.5}{5.5}",
+    "solution": "$y=\\tan(x)$"
+  }
+]
