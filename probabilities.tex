@@ -1,0 +1,110 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\RequirePackage{tikz}
+\usetikzlibrary{plotmarks, math}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\usepackage[margin=0cm, landscape]{geometry}
+
+\setlength{\parindent}{0cm}
+\setlength{\lineskip}{10pt}
+
+    \newcommand{\hdomi}[2]{
+        \begin{tikzpicture}
+            \tikzmath{
+                \dwidth = 13.5;
+                \dheight = 4.5;
+            }
+        \draw[thick] (0,0) rectangle (\dwidth,\dheight);
+        \draw (\dwidth/2,0) -- (\dwidth/2,\dheight);
+        \node at (\dwidth/4,\dheight/2) {#1};
+        \node at (3*\dwidth/4,\dheight/2) {#2};
+        \end{tikzpicture}
+    } 
+
+    \newcommand{\vdomi}[2]{
+        \begin{tikzpicture}
+            \tikzmath{
+                \dwidth = 8;
+                \dheight = 3.5;
+            }
+        \draw[thick] (0,0) rectangle (\dwidth,\dheight);
+        \draw (0,\dheight/2) -- (\dwidth,\dheight/2);
+        \node at (\dwidth/2,3*\dheight/4) {\parbox{7cm}{\centering #1}};
+        \node at (\dwidth/2,\dheight/4) {\parbox{7cm}{\centering\small #2}};
+        \end{tikzpicture}
+    }
+
+    \newcommand{\myplot}[5]{
+     \begin{tikzpicture}
+          \begin{axis}[
+               grid = both,
+               axis lines = middle,
+               xlabel = $x$,
+               x label style={anchor=west},
+               ylabel = $y$,
+               y label style={anchor=south},
+               xmin = #2 , xmax = #3,
+               ymin = #4, ymax = #5,
+               restrict y to domain=#4:#5,
+               xtick distance=1,
+               ytick distance=1,
+              ]
+              \addplot[line width=1mm, domain=#2*1.1:#3*1.1, samples=100, color=red]{#1};
+          \end{axis}
+      \end{tikzpicture}
+}
+
+\newcommand{\myvplot}[5]{
+     \begin{tikzpicture}
+          \begin{axis}[
+               grid = both,
+               axis lines = middle,
+               xlabel = $x$,
+               x label style={anchor=west},
+               ylabel = $y$,
+               y label style={anchor=south},
+               xmin = #2 , xmax = #3,
+               ymin = #4, ymax = #5,
+               restrict y to domain=#4:#5,
+               xtick distance=1,
+               ytick distance=1,
+              ]
+              \addplot [line width=1mm, samples=100, color=red]coordinates {(#1,#5) (#1,#4)};
+          \end{axis}
+      \end{tikzpicture}
+}
+
+\newcommand{\plotbox}[5]{
+    \resizebox{0.2\textwidth}{!}{\myplot{#1}{#2}{#3}{#4}{#5}}
+}
+
+\newcommand{\vplotbox}[5]{
+    \resizebox{0.2\textwidth}{!}{\myvplot{#1}{#2}{#3}{#4}{#5}}
+}
+\pagestyle{empty}
+\begin{document}
+\begin{center}\vdomi{START}{Two fair coins are tossed. What is the probability of getting at least one head?}
+\vdomi{$1 - \frac{1}{4} = \frac{3}{4}$}{What is the probability of drawing 2 aces in a row (without replacement) from a deck?}
+\vdomi{$\frac{4}{52} \cdot \frac{3}{51} = \frac{1}{221}$}{A family has 3 children. What is the probability of having exactly 2 boys?}
+\vdomi{$\binom{3}{2} \cdot \left(\frac{1}{2}\right)^3 = \frac{3}{8}$}{Two dice are rolled. What is the probability the sum is 7?}
+\vdomi{$\frac{6}{36} = \frac{1}{6}$}{A card is drawn from a standard deck. What is the probability it is a heart or a king?}
+\vdomi{$\frac{13}{52} + \frac{4}{52} - \frac{1}{52} = \frac{16}{52} = \frac{4}{13}$}{If $P(A) = 0.4$ and $P(A \cup B) = 0.7$ with $A$, $B$ independent, find $P(B)$.}
+\vdomi{$0.7 = 0.4 + P(B) - 0.4 \cdot P(B) \Rightarrow P(B) = 0.5$}{A fair die is rolled. What is the probability of getting an even number?}
+\vdomi{$\frac{3}{6} = \frac{1}{2}$}{Events $A$ and $B$ are independent with $P(A) = 0.4$ and $P(B) = 0.5$. Find $P(A \cap B)$.}
+\vdomi{$P(A) \cdot P(B) = 0.2$}{If $P(B) = 0.5$ and $P(A \cap B) = 0.3$, find $P(A|B)$.}
+\vdomi{$\frac{P(A \cap B)}{P(B)} = \frac{0.3}{0.5} = 0.6$}{Events $A$ and $B$ are independent. If $P(A^c) = 0.7$ and $P(B) = 0.4$, find $P(A \cup B)$.}
+\vdomi{$0.3 + 0.4 - 0.3 \cdot 0.4 = 0.58$}{A bag contains 3 red and 5 blue balls. What is the probability of drawing a red ball?}
+\vdomi{$\frac{3}{8}$}{If $P(A|B) = P(A)$, what does this imply about $A$ and $B$?}
+\vdomi{$A$ and $B$ are independent}{Three cards are drawn without replacement from a deck. What is the probability all are spades?}
+\vdomi{$\frac{13}{52} \cdot \frac{12}{51} \cdot \frac{11}{50} = \frac{11}{850}$}{If $P(A \cup B) = 0.8$, $P(A) = 0.5$, and $P(B) = 0.6$, find $P(A \cap B)$.}
+\vdomi{$P(A) + P(B) - P(A \cup B) = 0.3$}{If $P(A) = 0.3$ and $P(B|A) = 0.6$, find $P(A \cap B)$.}
+\vdomi{$P(A) \cdot P(B|A) = 0.18$}{A box has 4 defective and 6 good items. Two items are drawn. What is $P(\text{both good})$?}
+\vdomi{$\frac{6}{10} \cdot \frac{5}{9} = \frac{1}{3}$}{In a class, 60\% study math, 40\% study physics, 25\% study both. What fraction study neither?}
+\vdomi{$1 - (0.6 + 0.4 - 0.25) = 0.25$}{If $P(A) = 0.6$, what is $P(A^c)$?}
+\vdomi{$1 - P(A) = 0.4$}{If $A$ and $B$ are mutually exclusive with $P(A) = 0.3$ and $P(B) = 0.4$, find $P(A \cup B)$.}
+\vdomi{$P(A) + P(B) = 0.7$}{If $P(A) = 0.5$, $P(B) = 0.4$, and $P(A \cap B) = 0.2$, find $P(A \cup B)$.}
+\vdomi{$0.5 + 0.4 - 0.2 = 0.7$}{END}
+
+\end{center}
+\end{document}
