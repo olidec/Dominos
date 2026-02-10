@@ -1,0 +1,62 @@
+[
+  {
+    "exercise": "Compute $\\vecdd{2}{3} + \\vecdd{4}{-1}$.",
+    "solution": "$\\vecdd{6}{2}$"
+  },
+  {
+    "exercise": "Compute $\\vecdd{5}{-2} - \\vecdd{3}{4}$.",
+    "solution": "$\\vecdd{2}{-6}$"
+  },
+  {
+    "exercise": "Compute $3 \\cdot \\vecdd{-1}{4}$.",
+    "solution": "$\\vecdd{-3}{12}$"
+  },
+  {
+    "exercise": "Find the magnitude of $\\vecdd{3}{4}$.",
+    "solution": "$|\\vec{v}| = \\sqrt{9+16} = 5$"
+  },
+  {
+    "exercise": "Find the magnitude of $\\vecddd{1}{2}{2}$.",
+    "solution": "$|\\vec{v}| = \\sqrt{1+4+4} = 3$"
+  },
+  {
+    "exercise": "Compute $\\vecddd{1}{0}{-3} + \\vecddd{2}{5}{1}$.",
+    "solution": "$\\vecddd{3}{5}{-2}$"
+  },
+  {
+    "exercise": "Compute $-2 \\cdot \\vecddd{3}{-1}{4}$.",
+    "solution": "$\\vecddd{-6}{2}{-8}$"
+  },
+  {
+    "exercise": "Find the unit vector in the direction of $\\vecdd{6}{8}$.",
+    "solution": "$\\frac{1}{10}\\vecdd{6}{8} = \\vecdd{\\frac{3}{5}}{\\frac{4}{5}}$"
+  },
+  {
+    "exercise": "Point $A=(1,2)$ and $B=(4,6)$. Find $\\vec{AB}$.",
+    "solution": "$\\vec{AB} = \\vecdd{3}{4}$"
+  },
+  {
+    "exercise": "Point $A=(3,1,-2)$ and $B=(0,4,1)$. Find $\\vec{AB}$.",
+    "solution": "$\\vec{AB} = \\vecddd{-3}{3}{3}$"
+  },
+  {
+    "exercise": "Find $|\\vec{AB}|$ for $A=(0,4,1)$ and $B=(3,0,-2)$.",
+    "solution": "$|\\vec{AB}| = \\sqrt{9+16+9} = \\sqrt{34}$"
+  },
+  {
+    "exercise": "For which value of $t$ are $\\vecdd{2}{t}$ and $\\vecdd{6}{9}$ parallel?",
+    "solution": "$t = 3$"
+  },
+  {
+    "exercise": "Given $\\vec{a}=\\vecdd{1}{3}$ and $\\vec{b}=\\vecdd{-2}{5}$, compute $2\\vec{a}+\\vec{b}$.",
+    "solution": "$\\vecdd{2}{6}+\\vecdd{-2}{5}=\\vecdd{0}{11}$"
+  },
+  {
+    "exercise": "Find the midpoint $M$ of $A=(2,4,6)$ and $B=(8,0,-2)$.",
+    "solution": "$M = \\frac{1}{2}\\left(\\vecddd{2}{4}{6}+\\vecddd{8}{0}{-2}\\right) = (5,2,2)$"
+  },
+  {
+    "exercise": "Compute $\\vecddd{2}{-1}{3} - 2\\cdot\\vecddd{1}{0}{-1}$.",
+    "solution": "$\\vecddd{2}{-1}{3}-\\vecddd{2}{0}{-2}=\\vecddd{0}{-1}{5}$"
+  }
+]
