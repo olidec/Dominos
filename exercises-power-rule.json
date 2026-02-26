@@ -1,0 +1,62 @@
+[
+  {
+    "exercise": "$f(x) = x^8$.",
+    "solution": "$f'(x) = 8x^7$"
+  },
+  {
+    "exercise": "$f(x) = 5x^3$.",
+    "solution": "$f'(x) = 15x^2$"
+  },
+  {
+    "exercise": "$f(x) = \\dfrac{1}{x}$.",
+    "solution": "$f'(x) = -\\dfrac{1}{x^2}$"
+  },
+  {
+    "exercise": "$f(x) = \\dfrac{1}{x^3}$.",
+    "solution": "$f'(x) = -\\dfrac{3}{x^4}$"
+  },
+  {
+    "exercise": "$f(x) = \\sqrt{x}$.",
+    "solution": "$f'(x) = \\dfrac{1}{2\\sqrt{x}}$"
+  },
+  {
+    "exercise": "$f(x) = x^{-2}$.",
+    "solution": "$f'(x) = -2x^{-3}$"
+  },
+  {
+    "exercise": "$f(x) = \\dfrac{5}{x^2}$.",
+    "solution": "$f'(x) = -\\dfrac{10}{x^3}$"
+  },
+  {
+    "exercise": "$f(x) = \\sqrt[3]{x}$.",
+    "solution": "$f'(x) = \\dfrac{1}{3\\sqrt[3]{x^2}}$"
+  },
+  {
+    "exercise": "$f(x) = 4\\sqrt{x}$.",
+    "solution": "$f'(x) = \\dfrac{2}{\\sqrt{x}}$"
+  },
+  {
+    "exercise": "$f(x) = x^{3/2}$.",
+    "solution": "$f'(x) = \\dfrac{3}{2}\\sqrt{x}$"
+  },
+  {
+    "exercise": "$f(x) = -\\dfrac{3}{x^4}$.",
+    "solution": "$f'(x) = \\dfrac{12}{x^5}$"
+  },
+  {
+    "exercise": "$f(x) = 4x^{-3}$.",
+    "solution": "$f'(x) = -12x^{-4}$"
+  },
+  {
+    "exercise": "$f(x) = x^{2/3}$.",
+    "solution": "$f'(x) = \\dfrac{2}{3\\sqrt[3]{x}}$"
+  },
+  {
+    "exercise": "$f(x) = \\sqrt[4]{x^3}$.",
+    "solution": "$f'(x) = \\dfrac{3}{4\\sqrt[4]{x}}$"
+  },
+  {
+    "exercise": "$f(x) = \\dfrac{2}{\\sqrt{x}}$.",
+    "solution": "$f'(x) = -\\dfrac{1}{\\sqrt{x^3}}$"
+  }
+]

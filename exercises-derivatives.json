@@ -1,0 +1,62 @@
+[
+  {
+    "exercise": "Compute $f'(x)$ for $f(x) = 5x^3 - 2x + 1$.",
+    "solution": "$f'(x) = 15x^2 - 2$"
+  },
+  {
+    "exercise": "Compute $f'(x)$ for $f(x) = -2x^4 + 3x^2 - x$.",
+    "solution": "$f'(x) = -8x^3 + 6x - 1$"
+  },
+  {
+    "exercise": "Compute $f'(x)$ for $f(x) = x^5 - 4x^3 + 2x^2$.",
+    "solution": "$f'(x) = 5x^4 - 12x^2 + 4x$"
+  },
+  {
+    "exercise": "Compute $f'(x)$ for $f(x) = x^2 \\cdot \\sin(x)$.",
+    "solution": "$f'(x) = 2x \\cdot \\sin(x) + x^2 \\cdot \\cos(x)$"
+  },
+  {
+    "exercise": "Compute $f'(x)$ for $f(x) = x^3 \\cdot e^x$.",
+    "solution": "$f'(x) = 3x^2 \\cdot e^x + x^3 \\cdot e^x$"
+  },
+  {
+    "exercise": "Compute $f'(x)$ for $f(x) = x \\cdot \\ln(x)$.",
+    "solution": "$f'(x) = 1 \\cdot \\ln(x) + x \\cdot \\frac{1}{x}$"
+  },
+  {
+    "exercise": "Compute $f'(x)$ for $f(x) = \\dfrac{x^2}{x+1}$.",
+    "solution": "$f'(x) = \\dfrac{2x \\cdot (x+1) - x^2 \\cdot 1}{(x+1)^2}$"
+  },
+  {
+    "exercise": "Compute $f'(x)$ for $f(x) = \\dfrac{\\sin(x)}{x}$.",
+    "solution": "$f'(x) = \\dfrac{\\cos(x) \\cdot x - \\sin(x) \\cdot 1}{x^2}$"
+  },
+  {
+    "exercise": "Compute $f'(x)$ for $f(x) = \\dfrac{e^x}{x^2}$.",
+    "solution": "$f'(x) = \\dfrac{e^x \\cdot x^2 - e^x \\cdot 2x}{(x^2)^2}$"
+  },
+  {
+    "exercise": "Compute $f'(x)$ for $f(x) = (2x+3)^5$.",
+    "solution": "$f'(x) = 5(2x+3)^4 \\cdot 2$"
+  },
+  {
+    "exercise": "Compute $f'(x)$ for $f(x) = \\sin(x^2)$.",
+    "solution": "$f'(x) = \\cos(x^2) \\cdot 2x$"
+  },
+  {
+    "exercise": "Compute $f'(x)$ for $f(x) = e^{3x+1}$.",
+    "solution": "$f'(x) = e^{3x+1} \\cdot 3$"
+  },
+  {
+    "exercise": "Compute $f'(x)$ for $f(x) = \\ln(x^2+1)$.",
+    "solution": "$f'(x) = \\dfrac{1}{x^2+1} \\cdot 2x$"
+  },
+  {
+    "exercise": "Compute $f'(x)$ for $f(x) = x^2 \\cdot e^{2x}$.",
+    "solution": "$f'(x) = 2x \\cdot e^{2x} + x^2 \\cdot e^{2x} \\cdot 2$"
+  },
+  {
+    "exercise": "Compute $f'(x)$ for $f(x) = \\dfrac{x}{x^2+1}$.",
+    "solution": "$f'(x) = \\dfrac{1 \\cdot (x^2+1) - x \\cdot 2x}{(x^2+1)^2}$"
+  }
+]
