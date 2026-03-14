@@ -1,0 +1,62 @@
+[
+  {
+    "exercise": "Compute $\\vecdd{3}{4} \\cdot \\vecdd{2}{-1}$.",
+    "solution": "$2$"
+  },
+  {
+    "exercise": "Compute $\\vecddd{1}{2}{3} \\cdot \\vecddd{4}{-1}{2}$.",
+    "solution": "$8$"
+  },
+  {
+    "exercise": "For which value of $t$ are $\\vecdd{3}{t}$ and $\\vecdd{4}{6}$ orthogonal?",
+    "solution": "$t=-2$."
+  },
+  {
+    "exercise": "For which value of $t$ are $\\vecdd{t}{3}$ and $\\vecdd{2}{-4}$ orthogonal?",
+    "solution": "$t = 6$"
+  },
+  {
+    "exercise": "Compute $\\vecddd{2}{0}{-3} \\cdot \\vecddd{1}{5}{-1}$.",
+    "solution": "$5$"
+  },
+  {
+    "exercise": "Compute $\\vecddd{1}{0}{0} \\times \\vecddd{0}{1}{0}$.",
+    "solution": "$\\vecddd{0}{0}{1}$"
+  },
+  {
+    "exercise": "Compute $\\vecddd{2}{1}{0} \\times \\vecddd{0}{3}{1}$.",
+    "solution": "$\\vecddd{1}{-2}{6}$"
+  },
+  {
+    "exercise": "Compute $\\vecddd{1}{2}{3} \\times \\vecddd{4}{5}{6}$.",
+    "solution": "$\\vecddd{-3}{6}{-3}$"
+  },
+  {
+    "exercise": "Compute $\\vecddd{3}{0}{-1} \\times \\vecddd{1}{2}{0}$.",
+    "solution": "$\\vecddd{2}{-1}{6}$"
+  },
+  {
+    "exercise": "Compute $\\vecddd{2}{3}{1} \\times \\vecddd{2}{3}{1}$.",
+    "solution": "$\\vecddd{0}{0}{0}$"
+  },
+  {
+    "exercise": "Find the angle between $\\vecdd{1}{0}$ and $\\vecdd{1}{1}$.",
+    "solution": "$\\theta = 45^\\circ$"
+  },
+  {
+    "exercise": "Find the angle between $\\vecddd{1}{1}{0}$ and $\\vecddd{0}{1}{1}$.",
+    "solution": "$\\theta = 60^\\circ$"
+  },
+  {
+    "exercise": "Find the angle between $\\vecddd{1}{2}{2}$ and $\\vecddd{2}{1}{-2}$.",
+    "solution": "$\\theta = 90^\\circ$"
+  },
+  {
+    "exercise": "For which value of $t$ are $\\vecddd{2}{t}{-1}$ and $\\vecddd{1}{2}{4}$ orthogonal?",
+    "solution": "$t = 1$"
+  },
+  {
+    "exercise": "Compute $\\vecddd{0}{1}{2} \\times \\vecddd{3}{0}{1}$.",
+    "solution": "$\\vecddd{1}{6}{-3}$"
+  }
+]
